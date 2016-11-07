@@ -1,0 +1,202 @@
+/* main container holds the game window */
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #8693AB
+}
+
+.mainContainer{
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 480px;
+    width: 640px;
+    border:  1px solid black;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+/* Cooler Palette Ideas came from coolers.co, special credit to Dominique Alexander for site recommendation
+https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
+.instructions{
+  padding: 10px;
+  height: 480px;
+  width: 640px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18pt;
+  color: #212227;
+  background-color: #AAB9CF;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+#start{
+  background-color: #637074;
+  font-size: 18pt;
+  color: #212227;
+  height: 28pt;
+}
+/* room list and item containers*/
+.livingRoom{
+  background-image: url('room1.png');
+  height: 480px;
+  width: 640px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#itemContainer1{
+  height: 270px;
+  width: 118.5px;
+  left: 77.3%;
+  top: 42.3%;
+  position: absolute;
+  float: none;
+  background-image: url('./images/plant.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.plant{
+  height: 150px;
+  width: 275px;
+  position: relative;
+}
+.bedroom{
+  background-image: url('room2.png');
+  height: 480px;
+  width: 640px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+/* .pileOfDirtyLaundry */
+#itemContainer2{
+  height: 250px;
+  width: 200px;
+  bottom: 20%;
+  left: 40%;
+  position: absolute;
+  background-image: url('images/pile.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* .luggage */
+#itemContainer3{
+  height: 150px;
+  width: 200px;
+  top: 70%;
+  left: 17%;
+  position: absolute;
+  background-image: url('images/lug.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* .ottomon */
+#itemContainer4{
+  height: 125px;
+  width: 125px;
+  top: 75%;
+  left: 55%;
+  position: absolute;
+  background-image: url('images/otto.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* .fridge */
+#itemContainer5{
+  height: 175px;
+  width: 120px;
+  top: 60%;
+  left: 75%;
+  position: absolute;
+  background-image: url('images/fridge.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#navRight{
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+  height: 50px;
+  bottom: 0;
+  display: inline-block
+}
+#navLeft{
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+  height: 50px;
+  bottom: 0;
+  display: inline-block;
+}
+
+/* Inventory Container and Slots */
+.bagInv{
+  margin: 0 auto;
+  width: 450px;
+  margin-top: 20px;
+
+}
+.inventory{
+  height: 70px;
+  width: 70px;
+  position: relative;
+  display: inline-block;
+  border: 3px solid black;
+  float: left;
+  background-color: #637074;
+}
+
+/* itemlist */
+.bag{
+    background-image: url('./images/bag.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 75px;
+    position: absolute;
+    left: 5%;
+    bottom:  5%;
+    display: inline-block;
+}
+.items{
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  top: 25%;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cellphone{
+  background-image: url('./images/phone.png');
+}
+#keys{
+  background-image: url('./images/keys.png');
+}
+#wallet{
+  background-image: url('./images/wallet.png');
+}
+#money{
+  background-image: url('./images/money.png');
+}
+#metrocard{
+  background-image: url('./images/metrocard.png');
+}
+.clock{
+  font-family: 'Orbitron', sans-serif;
+  color: #510009;
+  font-size: 20pt;
+  position: absolute;
+  right: 19%;
+}
+#minutes{
+  display: inline-block
+}
+#seconds{
+  display: inline-block
+}
