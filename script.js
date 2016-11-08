@@ -1,7 +1,6 @@
 $(document).ready(function() {
   console.log('script loaded');
-  //images coming from pixabay or labeled for reuse from google search
-  //initially hide eveything on instruction page aside from start button
+  //initially hide eveything on instruction page aside from start button; John Bell recommended hiding/showing seperate divs for page navigation; this worked better in terms of not created seperate pages that would have to constantly be loaded
   $('#navRight').hide();
   $('#navLeft').hide();
   $('#start').on('click', function() {
