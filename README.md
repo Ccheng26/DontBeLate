@@ -22,6 +22,7 @@ The second one didn't happen.
 * JavaScript: overall functionality of the game. Used for checking win/loss options, navigating the rooms via hiding/showing divs, appending classes, if statements and more
 * White boards: pseudo coding and wireframing
 * Gliffy: wireframing
+* Photoshop: editing pictures, removing items from backgrounds to put them in divs
 * GitHub: making the site live and setting up repositories to go back to previous work
 * Google Chrome Browser: displaying the page and constantly using Developer Tools for debugging
 
