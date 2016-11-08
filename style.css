@@ -1,25 +1,27 @@
 /* main container holds the game window */
-body{
+
+body {
   margin: 0;
   padding: 0;
   text-align: center;
   background-color: #8693AB
 }
-
-.mainContainer{
-    padding: 0;
-    margin: 0 auto;
-    margin-top: 100px;
-    height: 480px;
-    width: 640px;
-    border:  1px solid black;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
+.mainContainer {
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 100px;
+  height: 480px;
+  width: 640px;
+  border: 1px solid black;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }
+
 /* Cooler Palette Ideas came from coolers.co, special credit to Dominique Alexander for site recommendation
 https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
-.instructions{
+
+.instructions {
   padding: 10px;
   height: 480px;
   width: 640px;
@@ -31,14 +33,16 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
   position: absolute;
   z-index: 1;
 }
-#start{
+#start {
   background-color: #637074;
   font-size: 18pt;
   color: #212227;
   height: 28pt;
 }
+
 /* room list and item containers*/
-.livingRoom{
+
+.livingRoom {
   background-image: url('room1.png');
   height: 480px;
   width: 640px;
@@ -46,7 +50,17 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
   background-size: contain;
   background-repeat: no-repeat;
 }
-#itemContainer1{
+.bedroom {
+  background-image: url('room2.png');
+  height: 480px;
+  width: 640px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+/* .plant*/
+#itemContainer1 {
   height: 270px;
   width: 118.5px;
   left: 77.3%;
@@ -57,21 +71,10 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
   background-size: contain;
   background-repeat: no-repeat;
 }
-.plant{
-  height: 150px;
-  width: 275px;
-  position: relative;
-}
-.bedroom{
-  background-image: url('room2.png');
-  height: 480px;
-  width: 640px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-}
+
 /* .pileOfDirtyLaundry */
-#itemContainer2{
+
+#itemContainer2 {
   height: 250px;
   width: 200px;
   bottom: 20%;
@@ -81,8 +84,10 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 /* .luggage */
-#itemContainer3{
+
+#itemContainer3 {
   height: 150px;
   width: 200px;
   top: 70%;
@@ -92,8 +97,10 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 /* .ottomon */
-#itemContainer4{
+
+#itemContainer4 {
   height: 125px;
   width: 125px;
   top: 75%;
@@ -103,8 +110,10 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 /* .fridge */
-#itemContainer5{
+
+#itemContainer5 {
   height: 175px;
   width: 120px;
   top: 60%;
@@ -115,14 +124,16 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
   background-repeat: no-repeat;
 }
 
-#navRight{
+/* navigation items*/
+
+#navRight {
   margin-right: 0 auto;
   margin-left: 0 auto;
   height: 50px;
   bottom: 0;
   display: inline-block
 }
-#navLeft{
+#navLeft {
   margin-right: 0 auto;
   margin-left: 0 auto;
   height: 50px;
@@ -131,13 +142,13 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
 }
 
 /* Inventory Container and Slots */
-.bagInv{
+
+.bagInv {
   margin: 0 auto;
   width: 450px;
   margin-top: 20px;
-
 }
-.inventory{
+.inventory {
   height: 70px;
   width: 70px;
   position: relative;
@@ -148,18 +159,19 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
 }
 
 /* itemlist */
-.bag{
-    background-image: url('./images/bag.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 80px;
-    width: 75px;
-    position: absolute;
-    left: 5%;
-    bottom:  5%;
-    display: inline-block;
+
+.bag {
+  background-image: url('./images/bag.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 75px;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  display: inline-block;
 }
-.items{
+.items {
   height: 50px;
   width: 50px;
   display: inline-block;
@@ -171,32 +183,34 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
   margin-left: auto;
   margin-right: auto;
 }
-
-#cellphone{
+#cellphone {
   background-image: url('./images/phone.png');
 }
-#keys{
+#keys {
   background-image: url('./images/keys.png');
 }
-#wallet{
+#wallet {
   background-image: url('./images/wallet.png');
 }
-#money{
+#money {
   background-image: url('./images/money.png');
 }
-#metrocard{
+#metrocard {
   background-image: url('./images/metrocard.png');
 }
-.clock{
+
+/*clock display*/
+
+.clock {
   font-family: 'Orbitron', sans-serif;
   color: #510009;
   font-size: 20pt;
   position: absolute;
   right: 19%;
 }
-#minutes{
+#minutes {
   display: inline-block
 }
-#seconds{
+#seconds {
   display: inline-block
 }
