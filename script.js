@@ -8,7 +8,7 @@ $(document).ready(function() {
       $('.instructions').remove();
       $('#navLeft').show();
     });
-    //put each item in an array
+  //put each item in an array
   var items = [
     ['cellphone', $('#cellphone'), 100],
     ['keys', $('#keys'), 100],
@@ -34,17 +34,15 @@ $(document).ready(function() {
     var $randomHide = hider[Math.floor(Math.random() * hider.length)];
     return $randomHide;
   }
-  var $randomPlace = $hidePlace();
-  var $hidingPlace = $randomPlace[1];
-    //function to hide the items; will append
+
+  //function to hide the items; will iterate along the length of the items and append them to the item containers(hiding spots); had help from Nick Michel on revising synthax for appending specific items with the [i]
   for (var i = 0; i < items.length; i++) {
     var hideSpot = $hidePlace();
     hideSpot[1].append(items[i][1]);
     $('.items').hide();
   }
-  //showItems will show the hidden items when clicking on the correct container that hides them; this will also move the containers slightly so the user won't have to constantly click on them to find more items
+  //showItems will show the hidden items when clicking on the correct container that hides them; this will also move the containers slightly so the user won't have to constantly click on them to find more items; items were later moved slightly so they won't look too out of place
   var showItems = function() {
-    //attempted to shorten code, did not function properly
     // for (var j = 0; j > hider.length; j++) {
     //   $(this).on('click', function() {
     //   if ($(this.items).css('display') == 'none') {
@@ -119,7 +117,11 @@ $(document).ready(function() {
       clearInterval(countDown);
     }
   }
+
   //if statements to check if inventory slots are available, if not return alert
+  //click functions will add the items to designated inventory slots if there is a bag present, if not then an alert telling the user to find a bag will display;
+  //items that are clicked if there is a bag present will be added to inventory slot via the .append() method and will also be given a class 'found'; if all the items are found, the winning statement will appear
+
   // for(var i = 0; i < $('.items').length; i++){
   //   $('.items')[i].click(function () {
   //   if($(".bagInv").css("display") !== "block") {
@@ -130,9 +132,8 @@ $(document).ready(function() {
   //         })
   //   $('.items').hide()
   // }
-  // ^attempt to shorten code, did not work properly afterwards
-  // these click functions will add the items to designated inventory slots if there is a bag present, if not then an alert telling the user to find a bag will display;
-  //items that are clicked if there is a bag present will be added to inventory slot via the .append() method and will also be given a class found; if all the items are found, the winning statement will appear
+  // ^attempt to shorten code, did not work properly afterwards; initially started with the code below and kept it to clear css properties:
+
   $('#cellphone').click(function() {
     if ($(".bagInv").css("display") !== "block") {
       alert("Can't carry item, find a bag!");
