@@ -108,6 +108,7 @@ $(document).ready(function() {
     //when you click on inventory bag, item slots are displayed
   $('.bag').on('click', function() {
       $('.bagInv').show();
+      $('.bag').css({'left': '20%', 'bottom': '3%'});
       $('.bagInv').append($('.bag'));
     })
     // checks if the user has collected all the items via amount of class length 'found', if so winning statement is displayed
@@ -204,13 +205,13 @@ $(document).ready(function() {
   var countDown = setInterval(function() {
       //function to display seconds and minutes remaining
       var minDisplay = $('#minutes').html(min);
-      var secDisplay = $('#seconds').html(sec);
+      var secDisplay = $('#seconds').html(':' + sec);
         //this function will start after the start button disappears; checking for element solution from stackoverflow http://stackoverflow.com/questions/31044/is-there-an-exists-function-for-jquery
       if ($('#start').length == 0) {
-        $('#seconds').html(sec -= 1);
+        $('#seconds').html(':' + (sec -= 1));
           //each second will decrease by 1 when when this function is called
         if (sec < 0) { //when the second variable gets below 0, it will start over at 59 seconds and subtract a minute
-          $('#seconds').html(sec = 59);
+          $('#seconds').html(':' + (sec = 59));
           $('#minutes').html(min -= 1);
         };
       };

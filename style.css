@@ -211,9 +211,10 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-aab9cf */
 .clock {
   font-family: 'Orbitron', sans-serif;
   color: #510009;
-  font-size: 20pt;
+  font-size: 26pt;
   position: absolute;
-  right: 19%;
+  bottom: 5%;
+  right: 25%;
 }
 #minutes {
   display: inline-block
